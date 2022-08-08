@@ -475,6 +475,13 @@ a:hover{
         margin-right: 0;
         padding: 0 50px;
     }
+
+    .section-about-me{
+        padding: 25px;
+    }
+    .anime-ul{
+        padding: 25px;
+    }
 }
 
 @media screen and (min-width: 992px)  {

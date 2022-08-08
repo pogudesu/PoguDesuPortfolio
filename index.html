@@ -8,19 +8,29 @@
         <script src=""></script>
     </head>
 <body>
-    <nav class="nav" id="home">
+    <nav class="nav">
         <div class="container">
             
             <div class="navbar">
-                <img class="logo" src="/image/logo/logoPogu.png" />
+                <img class="logo" src="/image/logo/logoPogu.gif" />
                 <a href="#home"><div class="navButton button button--mimas"><span>Home</span></div></a>
                 <a href="#project"><div class="navButton button button--mimas"><span>Projects</span></div></a>
                 <a href="#about-me"><div class="navButton button button--mimas"><span>About Me</span></div></a>
             </div>
+
+            <div class="navbar-mobile">
+                <img class="logo" src="/image/logo/logoPogu.gif" onclick="mobileNavFunction()" />
+                <div class="mobile-nav" id="mobile-nav-id">
+                    <a href="#home" onclick="mobileNavFunction()"><div class="mobile-a"><span>Home</span></div></a>
+                    <a href="#project" onclick="mobileNavFunction()"><div class="mobile-a"><span>Projects</span></div></a>
+                    <a href="#about-me" onclick="mobileNavFunction()"><div class="mobile-a"><span>About Me</span></div></a>
+                </div>
+
+            </div>
         </div>
     </nav>
     <!-- Main Body Home-->
-    <section class="lore-section">
+    <section class="lore-section" id="home">
         <div class="container bg-lore-text">
             <div class="section-header pogu-desu">- Pogu Desu -</div>
             <div class="lore-title">Chapter 1</div>
@@ -42,33 +52,33 @@
         </div>
 
     </section>
-    <nav class="nav">
+    <!-- <nav class="nav">
         <div class="container">
             <div class="chapter-nav">
                 <div class="navButton">Previous</div>
                 <div class="navButton">Next</div>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- Social Media Section-->
     <section class="social-media-section">
         <div class="container">
             <div class="social-media-bg">
                 <h1 class="section-header">Social Media</h1>
                 <ul>
-                    <li><a href=""><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/discord-logo.svg" alt="">Discord</span></div></button></a></li>
-                    <li><a href=""><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/twitter-logo.svg" alt="">Twitter</span></div></button></a></li>
-                    <li><a href=""><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/youtube-logo.svg" alt="">Youtube</span></div></button></a></li>
-                    <li><a href=""><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/twitch-logo.svg" alt="">Twitch</span></button></a></li>
-                    <li><a href=""><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/mail-logo.png" alt="">E-Mail</span></div></button></a></li>
+                    <li><a href="https://discord.gg/wAEQjYNrqZ"><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/discord-logo.svg" alt="">Discord</span></div></button></a></li>
+                    <li><a href="https://twitter.com/PoguThis"><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/twitter-logo.svg" alt="">Twitter</span></div></button></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCIcA29oq2Z_oh2o9ncVSI0w"><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/youtube-logo.svg" alt="">Youtube</span></div></button></a></li>
+                    <!-- <li><a href=""><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/twitch-logo.svg" alt="">Twitch</span></button></a></li> -->
+                    <li><a href="mailto:poguthis@gmail.com"><button class="social-media-button button button--bestia"><div class="button__bg"><span class="social-media-text"><img src="/image/logo/mail-logo.png" alt="">E-Mail</span></div></button></a></li>
                 </ul>
             </div>
         </div>
     </section>
     <!-- Project Section-->
-    <section class="section-projects" id="project">
+    <section class="section-projects">
         <div class="container">
-            <div class="section-header projects-header">Projects</div>
+            <div class="section-header projects-header" id="project">Projects</div>
             <div class="project-display">
                 <div class="project-card">
                     <div class="image-project-1 image-settings"></div>
@@ -111,19 +121,20 @@
     </section>
 
     <!-- About Me Section-->
-    <section class="section-about-me" id="about-me">
+    <section class="section-about-me">
         <div class="line"></div>
         <div class="container">
-            <div class="section-header projects-header about-me-header">About Me</div>
-            <p class="about-me-paragraph">I'm Pogu! I got reincarnated as a pig in Isekailando. The system gave me a task which is impossible for lazy person like me. 
-                The task to make a Vtuber Agency. I like proscatinating so I'm not sure if I'm up for this task. 
-                Since I have no choice, I have to do it inorder to survive. My first plan is to make a website to advertise my future project.
-                You'll be able to see the rest of my future plan in the Project Section.
+            <div class="section-header projects-header about-me-header" id="about-me">About Me</div>
+            <p class="about-me-paragraph">I'm Pogu! I got reincarnated as a pig in Isekailando. 
+                The system gave me the task of producing a Vtuber Agency. 
+                I like procrastinating, so I'm unsure if I'm up for this task. 
+                My first plan is to make a website to advertise my future project. 
+                You'll see the rest of my goals in the Project Section.
 
                 <br />
                 <br />
                 
-                Since this is all about me, let's talk about what I like.
+                Since this is about me, let's discuss what I like.
                 <br /> <br />
                 The anime I like are the following:
                 <ul class="anime-ul">
@@ -229,5 +240,6 @@
             <div class="footer-signature"><a href="http://www.pogudesu.com/">Made by <span class="link">Pogu Desu</span></a></div>
         </div>
     </section>
+    <script src="/script.js"></script>
 </body>
 </html>

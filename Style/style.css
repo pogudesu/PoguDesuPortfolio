@@ -31,6 +31,8 @@ nav{
     width: 100%;
     height: 100px;
     background-color: var(--clr-jet);
+    position: fixed;
+    z-index: 9999;
 }
 .navbar{
     display: flex;
@@ -49,10 +51,11 @@ nav{
 }
 .lore-section{
     background-image: url(/image/bg1.png);
-    height: 900px;
+    /* height: 900px; */
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top:100px
 }
 
 .lore-text{
@@ -279,7 +282,7 @@ ul li{
 
 .section-projects{
     border-top: 20px solid var(--clr-jet);
-    height: 150vh;
+    /* height: 150vh; */
     background-color: var(--clr-maximum-blue);
 }
 
@@ -288,6 +291,7 @@ ul li{
     font-size: 30px;
     font-weight: bolder;
     padding: 50px 0;
+    padding-top: 150px;
 }
 .project-display{
     display: flex;
@@ -364,8 +368,9 @@ ul li{
 }
 
 .section-about-me{
-    height: 150vh;
+    /* height: 150vh; */
     background-color: var(--clr-jet);
+    padding-bottom: 150px;
 }
 .line{
     height: 25px;
@@ -374,6 +379,7 @@ ul li{
 
 .about-me-header{
     color:white !important;
+    padding-top: 150px;
 }
 
 .about-me-paragraph{
@@ -423,3 +429,57 @@ a:hover{
 .link:hover{
     color: white;
 }
+
+@media only screen and (max-width: 992px) {
+    .container{
+        margin: 0;
+    }
+    .navbar{
+        display: none;
+    }
+    .bg-lore-text{
+        width: 100%;
+    }
+    .about-me-paragraph, .anime-ul{
+        padding: 0;
+    }
+    .navbar-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-nav{
+        display: none;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        background-color: var(--clr-thistle);
+    }
+    .mobile-nav a{
+        padding: 20px;
+        font-family: var(--ff-alata);
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .mobile-a{
+        padding-left: 20px;
+        color: var(--clr-jet);
+    }
+    .showNav{
+        display: block !important;
+    }
+
+    .lore-text{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 992px)  {
+    .navbar-mobile{
+        display: none;
+    }
+}
+

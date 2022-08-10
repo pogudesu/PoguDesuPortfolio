@@ -89,14 +89,14 @@
         <div class="container">
             <div class="section-header projects-header" id="project">Projects</div>
             <div class="project-display">
-                <div class="project-card">
+                <div class="project-card" onclick="showProjectOneFunction()">
                     <div class="image-project-1 image-settings"></div>
                     <div class="image-layover">
                         <div class="card-title">Pogu Desu Website</div>
                         <div class="card-description">This first project I made after getting reincarnated as a pig. It is a first big step towards my goal which is to create Vtuber Agency.</div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" onclick="showProjectOneFunction2()">
                     <div class="image-project-2 image-settings"></div>
                     <div class="image-layover">
                         <div class="card-title">Indie Game Project</div>
@@ -128,7 +128,59 @@
             
         </div>
     </section>
-
+    <!-- Project 1 -->
+    <section class="project-details" id="project-detail-id-1">
+        <div class="card-project-details">
+            <i class="iClose" onclick="showProjectOneFunction()">X</i>
+            <div class="project-title-card">
+                Pogu Desu Website
+            </div>
+            <div class="project-details-decscription">
+                This first project I made after getting reincarnated as a pig. 
+                It is a first big step towards my goal which is to create Vtuber Agency.
+                
+                <br><br>
+                Total Cost of this project is $15.07 CAD
+                <ul class="project-list">
+                    <li>Domain Name - $6.07</li>
+                    <li>Domain SSL - $9</li>
+                    <li>This will be the cost yearly for keeping the peoject.</li>
+                </ul>
+            </div>
+            <div class="project-details-image">
+                <img src="/image/card/bg-project1.png"></img>
+            </div>
+        </div>
+    </section>
+    <!-- Project 2 -->
+    <section class="project-details" id="project-detail-id-2">
+        <div class="card-project-details">
+            <i class="iClose" onclick="showProjectOneFunction2()">X</i>
+            <div class="project-title-card">
+                Indie Game
+            </div>
+            <div class="project-details-decscription">
+                Right now, this is currently in progress. Once game design are finished, I will post the document here below.
+                You can watch me make the game live on <a style="color:blue;" href="https://www.youtube.com/channel/UCIcA29oq2Z_oh2o9ncVSI0w">Youtube</a>.
+                <br/><br />
+                This will be my second project. 
+                I hope that people will enjoy it. 
+                After finishing this, it will be one step towards my goal which 
+                is to create Vtuber Agency.
+                
+                <br><br>
+                <!-- Total Cost of this project is $15.07 CAD
+                <ul class="project-list">
+                    <li>Domain Name - $6.07</li>
+                    <li>Domain SSL - $9</li>
+                    <li>This will be the cost yearly for keeping the peoject.</li>
+                </ul> -->
+            </div>
+            <!-- <div class="project-details-image">
+                <img src="/image/card/bg-project1.png"></img>
+            </div> -->
+        </div>
+    </section>
     <!-- About Me Section-->
     <section class="section-about-me">
         <div class="line"></div>

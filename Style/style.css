@@ -491,3 +491,15 @@ a:hover{
     }
 }
 
+.image-project-2{
+    background-image: url("/image/inprogress.png");
+    background-position: center;
+    background-size: cover;
+}
+.financial-report{
+    color: white;
+    font-family: var(--ff-alata);
+    font-size: 16px;
+    padding: 25px;
+}
+

@@ -63,9 +63,8 @@ nav{
     margin: 0 100px;
     padding-top: 25px;
     color: white;
-    font-family: var(--ff-squarePeg2);
-    word-spacing: 5px;
-    font-size: 25px;
+    font-family: var(--ff-roboto);
+    font-size: 20px;
 }
 .lore-title{
     color: white;

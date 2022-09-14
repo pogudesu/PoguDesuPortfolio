@@ -40,7 +40,12 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:600px;
+}
 .navButton{
     width: 200px;
     height: 100%;
@@ -575,5 +580,25 @@ a:hover{
     .project-details-decscription{
         width: 100%;
     }
+}
+
+.email-section{
+    padding-top: 100px;
+    background-color: var(--clr-jet);
+    color: white;
+}
+
+.center-this{
+    display: flex;
+    justify-content: center;
+}
+
+#mc_embed_signup{
+    background-color: var(--clr-jet);
+}
+
+.subscribe-button{
+    font-style: var(--ff-alata);
+    background-color: var(--clr-maximum-blue) !important ;
 }
 
